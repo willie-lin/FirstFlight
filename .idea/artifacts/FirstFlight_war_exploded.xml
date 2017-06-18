@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="FirstFlight:war exploded">
-    <output-path>$PROJECT_DIR$/target/FirstFlight</output-path>
+    <output-path>$PROJECT_DIR$/target/FlightDiary</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -70,7 +70,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/FirstFlight/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/FlightDiary/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="FirstFlight/web/Web" />
     </root>

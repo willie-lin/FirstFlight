@@ -1,7 +1,6 @@
 package com.gakki.love.domain;
 
 import lombok.Data;
-import netscape.security.Privilege;
 
 import javax.persistence.*;
 import java.util.List;
