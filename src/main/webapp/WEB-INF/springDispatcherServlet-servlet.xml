@@ -14,7 +14,8 @@
  <!-- 配置视图解析器 -->
  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
   <property name="prefix" value="/WEB-INF/content/"></property>
-  <property name="suffix" value=".jsp"></property>
+  <!--<property name="suffix" value=".jsp"></property>-->
+  <property name="suffix" value=".html"></property>
  </bean>
  <mvc:default-servlet-handler />
  <mvc:annotation-driven></mvc:annotation-driven>

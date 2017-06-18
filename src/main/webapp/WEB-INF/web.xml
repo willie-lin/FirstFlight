@@ -12,7 +12,7 @@
     </listener>
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>flightdiary.root</param-value>
+        <param-value>FirstFlight.root</param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
