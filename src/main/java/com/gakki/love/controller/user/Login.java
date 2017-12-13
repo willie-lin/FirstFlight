@@ -3,7 +3,7 @@ package com.gakki.love.controller.user;
 import com.gakki.love.domain.Topic;
 import com.gakki.love.domain.User;
 import com.gakki.love.service.UserService;
-import com.gakki.love.utils.Encrypt;
+import com.gakki.love.utils.EncryptUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -46,7 +46,7 @@ public class Login {
 
             log.debug("通过邮箱登录!!!");
 
-            user.setEmail(Encrypt.execEncrypt(user.getEmail(),true));
+            user.setEmail(EncryptUtils.execEncrypt(user.getEmail(),true));
             user.setUsername(null);
         }
 

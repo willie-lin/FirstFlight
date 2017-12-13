@@ -2,10 +2,9 @@ package com.gakki.love.controller.user;
 
 import com.gakki.love.domain.Topic;
 import com.gakki.love.domain.User;
-import com.gakki.love.exception.SystemWrongException;
-import com.gakki.love.exception.UserExistException;
+import com.gakki.love.exception.FlightException;
 import com.gakki.love.service.UserService;
-import com.gakki.love.utils.Encrypt;
+import com.gakki.love.utils.EncryptUtils;
 import com.gakki.love.utils.FileUtils;
 import com.gakki.love.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -60,11 +59,11 @@ public class RegistOrUpdate {
 
         //  如果是更新,用户ID不为空
         if (userService.getByName(user.getUsername()) != null && user.getId() == null) {
-            throw new UserExistException("用户名已存在,注册失败");
+            throw new FlightException("用户名已存在,注册失败");
         }
         //如果是注册需要加密密码，而更新是不允许修改密码的
         if (user.getId() == null) {
-            user.setPassword(Encrypt.execEncrypt(user.getPassword(), false));
+            user.setPassword(EncryptUtils.execEncrypt(user.getPassword(), false));
         }
         //包含中文名称的用户,先设置别名
         if (StringUtils.hasChinese(user.getUsername())) {
@@ -90,13 +89,13 @@ public class RegistOrUpdate {
         }
         //    判断邮箱是否存在，如果存在说明以后未修改，不不要加密
         if (userService.getByEmail(user.getEmail()) == null) {
-            user.setEmail(Encrypt.execEncrypt(user.getEmail(), true));
+            user.setEmail(EncryptUtils.execEncrypt(user.getEmail(), true));
         }
         Integer id = user.getId();
         if (userService.creatOrUpdate(user).getId() > 0) {
             user = userService.login(user);
             if (user.getId() == null) {
-                throw new SystemWrongException("系统出错了,操作被取消,请返回重新操作");
+                throw new FlightException("系统出错了,操作被取消,请返回重新操作");
             }
             map.put("user", user);
             //更新用户应返回到个人主页
@@ -106,7 +105,7 @@ public class RegistOrUpdate {
             //注册用户返回到主页
             return "redirect:/home";
         }
-        throw new SystemWrongException("系统出错了,操作被取消,请返回重新操作");
+        throw new FlightException("系统出错了,操作被取消,请返回重新操作");
     }
 
 }
