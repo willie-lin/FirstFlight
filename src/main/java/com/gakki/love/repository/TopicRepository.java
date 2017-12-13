@@ -77,7 +77,7 @@ public interface TopicRepository extends PagingAndSortingRepository<Topic,Intege
     通过标签获取分享
      */
     @Query(value = "select * from topic where tags like % :tags % limit :start,:size",nativeQuery = true)
-    List<Topic> getByTagsLimit(@Param("tags") String tags ,@Param("start") int start );
+    List<Topic> getByTagsLimit(@Param("tags") String tags, int i, @Param("start") int start);
 
     /*
     获取标签的总数.

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  * Created by 林漠 on 2017/6/12.
- */@Repository
+ */
+@Repository
 public interface FeedBackRepository extends JpaRepository<FeedBack,Integer> {
 }

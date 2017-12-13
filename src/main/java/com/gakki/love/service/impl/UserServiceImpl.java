@@ -5,7 +5,7 @@ import com.gakki.love.domain.User;
 import com.gakki.love.repository.FeedBackRepository;
 import com.gakki.love.repository.UserRepository;
 import com.gakki.love.service.UserService;
-import com.gakki.love.utils.Encrypt;
+import com.gakki.love.utils.EncryptUtils;
 import com.gakki.love.utils.Pagination;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -86,7 +86,7 @@ public class UserServiceImpl implements UserService {
 
         String regex  ="^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
         if (username.matches(regex)){
-            return userRepository.getByEmail(Encrypt.execEncrypt(username, true));
+            return userRepository.getByEmail(EncryptUtils.execEncrypt(username, true));
         }
         return userRepository.getByUsername(username);
 
