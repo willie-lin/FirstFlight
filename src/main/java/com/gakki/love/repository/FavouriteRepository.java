@@ -13,7 +13,8 @@ import java.util.List;
 
 /**
  * Created by 林漠 on 2017/6/12.
- */@Repository
+ */
+@Repository
 public interface FavouriteRepository extends JpaRepository<Favourite,Integer> {
 
     /*

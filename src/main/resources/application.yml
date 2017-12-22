@@ -1,0 +1,85 @@
+spring:
+  jpa:
+    open-in-view: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+#        format_sql: true
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+  redis:
+    host: localhost
+    port: 6379
+    password: $2a$10$1G3EImK46GA6C9BOA9gJcuIitF3YaXKwjIazh/IxkairzXplXP1rC
+  jackson:
+    serialization:
+      indent_output: true
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/firstflight
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    sessionStatEnable: true
+    profileEnable: true
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    testWhileIdle: true
+    validationQuery: select 1
+    maxOpenPreparedStatements: 20
+  main:
+    banner-mode: off
+  output:
+    ansi:
+      enabled: always
+  thymeleaf:
+    mode: HTML5
+    cache: false
+logging:
+  level:
+    root: info
+    org.ramer.diary: debug
+    org.ramer.diary.repository: info
+    org.springframework.boot.autoconfigure: info
+    org.springframework.sercurity: info
+    jdbc.resultset: off
+    jdbc.audit: off
+    jdbc.sqlonly: off
+    jdbc.sqltiming: info
+    jdbc.connection: info
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+server:
+  session:
+    tracking-modes: COOKIE
+  port: 8080
+flight:
+  encrypt.strength: 10
+  topic:
+    page:
+      size: 9
+    publish:
+      tags:
+        size: 20
+  topPeople:
+    page:
+      size: 6
+  personal:
+    topic:
+      page:
+        size: 3
+  qiniu:
+    access: FYfmtmhBMAGZyxZothLB50hgn18an3T1PKLa4nVz
+    secret: YeX5dBtF1Gq2tA-35AosS22O9FalPglj5rRChPDR
+    bucketName: diary
+    downDomain: http://oqdpapa6l.bkt.clouddn.com/
+  tags:
+    xml:
+      position: /xml/tags.xml
+  page:
+    scroll: false
