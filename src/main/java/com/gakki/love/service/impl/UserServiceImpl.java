@@ -6,6 +6,7 @@ import com.gakki.love.repository.FeedBackRepository;
 import com.gakki.love.repository.UserRepository;
 import com.gakki.love.service.UserService;
 import com.gakki.love.utils.EncryptUtils;
+import com.gakki.love.utils.IntegerUtils;
 import com.gakki.love.utils.Pagination;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,12 +64,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional(readOnly = true)
-    public User creatOrUpdate(User user){
-
-        User u = userRepository.saveAndFlush(user);
-
-        return u;
+    @Transactional
+    public boolean newOrUpdate(User user){
+        return IntegerUtils.isPositiveValue(userRepository.saveAndFlush(user).getId());
     }
 
     @Override
@@ -86,7 +84,7 @@ public class UserServiceImpl implements UserService {
 
         String regex  ="^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$";
         if (username.matches(regex)){
-            return userRepository.getByEmail(EncryptUtils.execEncrypt(username, true));
+            return userRepository.getByEmail(EncryptUtils.execEncrypt(username));
         }
         return userRepository.getByUsername(username);
 

@@ -46,7 +46,7 @@ public class Login {
 
             log.debug("通过邮箱登录!!!");
 
-            user.setEmail(EncryptUtils.execEncrypt(user.getEmail(),true));
+            user.setEmail(EncryptUtils.execEncrypt(user.getEmail()));
             user.setUsername(null);
         }
 

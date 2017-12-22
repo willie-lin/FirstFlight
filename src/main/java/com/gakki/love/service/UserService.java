@@ -16,8 +16,8 @@ public interface UserService {
     @Transactional(readOnly = true)
     User login(User user);
 
-    @Transactional(readOnly = true)
-    User creatOrUpdate(User user);
+    @Transactional
+    boolean newOrUpdate(User user);
 
     @Transactional(readOnly = true)
     User getById(Integer id);
