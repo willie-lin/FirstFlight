@@ -107,13 +107,13 @@ public class UserController {
         Page<Topic> oldTopics = (Page<Topic>) session.getAttribute("topicsPage");
         try {
             page = Integer.parseInt(pageNum);
-            if (page < 1){
+            if (page < 1) {
                 page = 1;
-            }else if (oldTopics != null && page > oldTopics.getTotalPages()){
+            } else if (oldTopics != null && page > oldTopics.getTotalPages()) {
                 page = oldTopics.getTotalPages() > 0 ? oldTopics.getTotalPages() : 1;
 
             }
-        }catch (Exception e){
+        } catch (NumberFormatException e) {
             page = 1;
         }
         Page<Topic> topicsPage = topicService.getTopicsPageByUserId(user,page,TOPIC_PAGE_SIZE);

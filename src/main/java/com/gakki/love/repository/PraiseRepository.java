@@ -22,7 +22,7 @@ public interface PraiseRepository extends JpaRepository<Praise,Integer> {
     /*
     获取点赞信息
      */
-    Praise getByUserAnAndTopic(User user, Topic topic);
+    Praise getByUserAndTopic(User user, Topic topic);
 
     /*
     通过topicid删除所有用户点赞信息

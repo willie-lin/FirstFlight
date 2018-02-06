@@ -46,7 +46,7 @@ public class PraiseServiceImpl implements com.gakki.love.service.PraiseService {
     public boolean praise(User user, Topic topic){
         //判断用户是否点过赞
 
-        Praise p  = praiseRepository.getByUserAnAndTopic(user,topic);
+        Praise p  = praiseRepository.getByUserAndTopic(user,topic);
 
 //        如果不为空说明用户已点过赞,取消本次操作
         if (p != null){
@@ -68,7 +68,7 @@ public class PraiseServiceImpl implements com.gakki.love.service.PraiseService {
     @Override
     public boolean notPraise(User user, Topic topic){
         //判断是否以点过赞👍
-        Praise p = praiseRepository.getByUserAnAndTopic(user,topic);
+        Praise p = praiseRepository.getByUserAndTopic(user,topic);
         if (p != null){
             return false;
         }
