@@ -2,6 +2,7 @@ package com.gakki.love.validator;
 
 import com.gakki.love.domain.User;
 import com.gakki.love.utils.MailUtils;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -14,6 +15,7 @@ import org.springframework.validation.Validator;
  * \* Description:
  * \
  */
+@Component
 public class UserValidator implements Validator {
     @Override
     public boolean supports(Class<?> clazz) {

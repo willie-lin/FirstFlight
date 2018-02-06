@@ -15,4 +15,6 @@ public interface FavouriteService {
 
     @Transactional
     boolean notFavourite(User user, Topic topic);
+
+
 }

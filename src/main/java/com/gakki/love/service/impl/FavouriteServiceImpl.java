@@ -59,4 +59,6 @@ public class FavouriteServiceImpl implements com.gakki.love.service.FavouriteSer
         favouriteRepository.deleteByUserAndTopic(user,topic);
         return true;
     }
+
+
 }

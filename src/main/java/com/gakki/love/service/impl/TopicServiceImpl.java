@@ -121,7 +121,7 @@ public class TopicServiceImpl implements com.gakki.love.service.TopicService {
     @Transactional(readOnly = true)
     public boolean getTopicByUserIdAndTopicId(Integer topic_id, User user){
 
-        Topic topic = topicRepository.getByIdAAndUser(topic_id,user);
+        Topic topic = topicRepository.getByIdAndUser(topic_id,user);
 
         if (topic == null){
 
@@ -155,7 +155,7 @@ public class TopicServiceImpl implements com.gakki.love.service.TopicService {
     @Override
     public long getCountByTag(String tag) {
 
-        return topicRepository.getCountByTags(tag);
+        return topicRepository.getCountByTag(tag);
     }
 
 
