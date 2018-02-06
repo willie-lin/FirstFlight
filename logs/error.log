@@ -1,0 +1,48 @@
+2018-01-23 11:05:30,693 ERROR [main] o.s.boot.SpringApplication - Application startup failed
+java.lang.IllegalStateException: Cannot bind to SpringApplication
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.bindToSpringApplication(ConfigFileApplicationListener.java:244)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:197)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.gakki.love.FirstFlight.main(FirstFlight.java:26)
+Caused by: org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.main' on field 'bannerMode': rejected value [false]; codes [typeMismatch.spring.main.bannerMode,typeMismatch.bannerMode,typeMismatch.org.springframework.boot.Banner$Mode,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.main.bannerMode,bannerMode]; arguments []; default message [bannerMode]]; default message [Failed to convert property value of type 'java.lang.Boolean' to required type 'org.springframework.boot.Banner$Mode' for property 'bannerMode'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.Boolean' to required type 'org.springframework.boot.Banner$Mode' for property 'bannerMode': no matching editors or conversion strategy found]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.checkForBindingErrors(PropertiesConfigurationFactory.java:359)
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.doBindPropertiesToTarget(PropertiesConfigurationFactory.java:276)
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.bindPropertiesToTarget(PropertiesConfigurationFactory.java:240)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.bindToSpringApplication(ConfigFileApplicationListener.java:241)
+	... 14 common frames omitted
+2018-01-23 11:06:42,061 ERROR [main] o.s.boot.SpringApplication - Application startup failed
+java.lang.IllegalStateException: Cannot bind to SpringApplication
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.bindToSpringApplication(ConfigFileApplicationListener.java:244)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:197)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:182)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:168)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.gakki.love.FirstFlight.main(FirstFlight.java:26)
+Caused by: org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'spring.main' on field 'bannerMode': rejected value [false]; codes [typeMismatch.spring.main.bannerMode,typeMismatch.bannerMode,typeMismatch.org.springframework.boot.Banner$Mode,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [spring.main.bannerMode,bannerMode]; arguments []; default message [bannerMode]]; default message [Failed to convert property value of type 'java.lang.Boolean' to required type 'org.springframework.boot.Banner$Mode' for property 'bannerMode'; nested exception is java.lang.IllegalStateException: Cannot convert value of type 'java.lang.Boolean' to required type 'org.springframework.boot.Banner$Mode' for property 'bannerMode': no matching editors or conversion strategy found]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.checkForBindingErrors(PropertiesConfigurationFactory.java:359)
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.doBindPropertiesToTarget(PropertiesConfigurationFactory.java:276)
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.bindPropertiesToTarget(PropertiesConfigurationFactory.java:240)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.bindToSpringApplication(ConfigFileApplicationListener.java:241)
+	... 14 common frames omitted
