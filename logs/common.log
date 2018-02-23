@@ -1,85 +1,352 @@
-2018-01-25 21:53:29,460 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
-2018-01-25 21:53:30,561 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 13960 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
-2018-01-25 21:53:30,563 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
-2018-01-25 21:53:32,331 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61db86bf: startup date [Thu Jan 25 21:53:32 CST 2018]; root of context hierarchy
-2018-01-25 21:53:40,682 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-01-25 21:53:41,896 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-01-25 21:53:41,998 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
-2018-01-25 21:53:42,000 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
-2018-01-25 21:53:42,001 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
-2018-01-25 21:53:42,001 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
-2018-01-25 21:53:42,002 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
-2018-01-25 21:53:42,003 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
-2018-01-25 21:53:42,004 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
-2018-01-25 21:53:42,006 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
-2018-01-25 21:53:42,006 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
-2018-01-25 21:53:42,007 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
-2018-01-25 21:53:42,008 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
-2018-01-25 21:53:42,009 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
-2018-01-25 21:53:42,010 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
-2018-01-25 21:53:43,990 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5aa29ddd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-01-25 21:53:45,279 INFO [main] org.eclipse.jetty.util.log - Logging initialized @85530ms
-2018-01-25 21:53:45,935 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
-2018-01-25 21:53:45,942 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
-2018-01-25 21:53:46,617 INFO [main] application - Initializing Spring embedded WebApplicationContext
-2018-01-25 21:53:46,618 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 14287 ms
-2018-01-25 21:53:47,098 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-01-25 21:53:47,099 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-01-25 21:53:47,099 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-01-25 21:53:47,100 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
-2018-01-25 21:53:47,119 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
-2018-01-25 21:53:47,119 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
-2018-01-25 21:53:47,168 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3a917e07{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.3820743613296661269.8080/,AVAILABLE}
-2018-01-25 21:53:47,168 INFO [main] org.eclipse.jetty.server.Server - Started @87419ms
-2018-01-25 21:53:49,945 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-01-25 21:53:50,055 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+2018-02-06 12:15:57,231 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-06 12:15:58,396 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 9752 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
+2018-02-06 12:15:58,398 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
+2018-02-06 12:15:59,461 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@234a8c1f: startup date [Tue Feb 06 12:15:59 CST 2018]; root of context hierarchy
+2018-02-06 12:16:08,413 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 12:16:09,602 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 12:16:10,668 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
+2018-02-06 12:16:10,672 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
+2018-02-06 12:16:10,673 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
+2018-02-06 12:16:10,674 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
+2018-02-06 12:16:10,675 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
+2018-02-06 12:16:10,676 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
+2018-02-06 12:16:10,677 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
+2018-02-06 12:16:10,678 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
+2018-02-06 12:16:10,679 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
+2018-02-06 12:16:10,681 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
+2018-02-06 12:16:10,682 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
+2018-02-06 12:16:10,683 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
+2018-02-06 12:16:10,684 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
+2018-02-06 12:16:12,772 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75b99bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-06 12:16:15,631 INFO [main] org.eclipse.jetty.util.log - Logging initialized @198809ms
+2018-02-06 12:16:17,373 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
+2018-02-06 12:16:17,384 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+2018-02-06 12:16:19,106 INFO [main] application - Initializing Spring embedded WebApplicationContext
+2018-02-06 12:16:19,107 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 19646 ms
+2018-02-06 12:16:19,640 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 12:16:19,640 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 12:16:19,641 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 12:16:19,641 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 12:16:19,711 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-06 12:16:19,711 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 12:16:19,972 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2c8561a9{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.5825152552993472028.8080/,AVAILABLE}
+2018-02-06 12:16:19,972 INFO [main] org.eclipse.jetty.server.Server - Started @203150ms
+2018-02-06 12:16:25,590 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-06 12:16:25,736 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-01-25 21:53:50,822 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
-2018-01-25 21:53:50,825 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2018-01-25 21:53:50,827 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-2018-01-25 21:53:51,150 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-01-25 21:53:58,612 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-01-25 21:54:04,662 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-2018-01-25 21:54:35,921 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-01-25 21:54:47,704 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-2018-01-25 21:54:51,427 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61db86bf: startup date [Thu Jan 25 21:53:32 CST 2018]; root of context hierarchy
-2018-01-25 21:54:52,479 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sign_in],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.Login.userLogin(com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession,java.security.Principal)
-2018-01-25 21:54:52,543 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}/update],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.UserController.update(com.gakki.love.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession,java.util.Map<java.lang.String, java.lang.Object>,java.lang.String)
-2018-01-25 21:54:52,589 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.input(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
-2018-01-25 21:54:52,591 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.personalMiddle(java.lang.String,com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,592 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.modifyEmail(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,594 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPassword],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forgetPassword(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,596 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.editHead(com.gakki.love.domain.User,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession) throws java.io.IOException
-2018-01-25 21:54:52,597 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyPassword],methods=[PUT]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.modifyPassword(java.lang.String,java.lang.String,com.gakki.love.domain.User)
-2018-01-25 21:54:52,598 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyEmail],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyEmail(javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,600 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail/sendMail],methods=[POST]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.sendEmailToModifyEmail(java.lang.String,com.gakki.love.domain.User,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,601 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyPassword()
-2018-01-25 21:54:52,602 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardForgetPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardForgetPassword(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
-2018-01-25 21:54:52,603 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPass/sendMail],methods=[POST]}" onto public void com.gakki.love.controller.user.UserController.sendMailToResetPass(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse) throws java.io.IOException
-2018-01-25 21:54:52,609 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.visitOtherPage(java.lang.Integer,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,611 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/topic/{topic_id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.forwardTopic(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
-2018-01-25 21:54:52,621 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-01-25 21:54:52,624 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-01-25 21:54:52,906 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-25 21:54:52,906 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-25 21:54:53,207 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-01-25 21:54:53,321 WARN [main] o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2018-01-25 21:55:01,232 INFO [main] o.s.b.a.s.AuthenticationManagerConfiguration - 
+2018-02-06 12:16:27,482 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-06 12:16:27,487 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-06 12:16:27,492 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-06 12:16:28,330 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-06 12:16:38,518 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-06 12:16:44,475 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-02-06 12:16:44,834 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: albums
+2018-02-06 12:16:44,836 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: albums
+2018-02-06 12:16:48,769 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: comment
+2018-02-06 12:16:48,770 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: comment
+2018-02-06 12:16:49,283 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: favourite
+2018-02-06 12:16:49,284 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: favourite
+2018-02-06 12:16:49,759 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: feed_back
+2018-02-06 12:16:49,763 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: feed_back
+2018-02-06 12:16:50,204 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: follow
+2018-02-06 12:16:50,207 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: follow
+2018-02-06 12:16:50,668 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: notify
+2018-02-06 12:16:50,670 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: notify
+2018-02-06 12:16:51,324 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: praise
+2018-02-06 12:16:51,326 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: praise
+2018-02-06 12:16:52,028 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: privilege
+2018-02-06 12:16:52,032 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: privilege
+2018-02-06 12:16:52,301 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: reply
+2018-02-06 12:16:52,304 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: reply
+2018-02-06 12:16:53,226 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: role_privileges
+2018-02-06 12:16:53,228 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: role_privileges
+2018-02-06 12:16:53,980 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: roles
+2018-02-06 12:16:53,981 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: roles
+2018-02-06 12:16:54,736 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: tags
+2018-02-06 12:16:54,737 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: tags
+2018-02-06 12:16:55,291 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: topic
+2018-02-06 12:16:55,294 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: topic
+2018-02-06 12:16:55,783 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user
+2018-02-06 12:16:55,787 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user
+2018-02-06 12:16:56,563 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user_role
+2018-02-06 12:16:56,569 INFO [main] o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: user_role
+2018-02-06 12:17:31,305 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 12:17:41,211 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-06 12:17:44,624 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@234a8c1f: startup date [Tue Feb 06 12:15:59 CST 2018]; root of context hierarchy
+2018-02-06 12:17:46,451 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sign_in],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.Login.userLogin(com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession,java.security.Principal)
+2018-02-06 12:17:46,469 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}/update],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.UserController.update(com.gakki.love.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession,java.util.Map<java.lang.String, java.lang.Object>,java.lang.String)
+2018-02-06 12:17:46,472 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.input(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-02-06 12:17:46,473 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.editHead(com.gakki.love.domain.User,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession) throws java.io.IOException
+2018-02-06 12:17:46,473 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPassword],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forgetPassword(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,473 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.modifyEmail(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,474 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.personalMiddle(java.lang.String,com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,474 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyPassword],methods=[PUT]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.modifyPassword(java.lang.String,java.lang.String,com.gakki.love.domain.User)
+2018-02-06 12:17:46,474 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPass/sendMail],methods=[POST]}" onto public void com.gakki.love.controller.user.UserController.sendMailToResetPass(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-02-06 12:17:46,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail/sendMail],methods=[POST]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.sendEmailToModifyEmail(java.lang.String,com.gakki.love.domain.User,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyEmail],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyEmail(javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardForgetPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardForgetPassword(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-02-06 12:17:46,475 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyPassword()
+2018-02-06 12:17:46,477 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/topic/{topic_id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.forwardTopic(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,477 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.visitOtherPage(java.lang.Integer,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 12:17:46,481 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 12:17:46,482 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 12:17:46,556 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 12:17:46,556 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 12:17:46,761 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 12:18:13,799 INFO [main] o.s.b.a.s.AuthenticationManagerConfiguration - 
 
-Using default security password: 774adfbf-40df-42f6-a52c-d085caf1c871
+Using default security password: f551c469-a1da-4f77-9aba-8d2ca3870a9c
 
-2018-01-25 21:55:02,173 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
-2018-01-25 21:55:02,178 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
-2018-01-25 21:55:02,203 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/images/**'], []
-2018-01-25 21:55:02,204 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
-2018-01-25 21:55:02,204 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
-2018-01-25 21:55:02,205 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/error'], []
-2018-01-25 21:55:03,561 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67054b2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@366ed5c7, org.springframework.security.web.header.HeaderWriterFilter@5ca32d1a, org.springframework.security.web.authentication.logout.LogoutFilter@472bcf53, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e491535, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6232025, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d88471a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2534b0d9, org.springframework.security.web.session.SessionManagementFilter@3f6aaa7, org.springframework.security.web.access.ExceptionTranslationFilter@27d0703e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8b5de1b]
-2018-01-25 21:55:04,145 INFO [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
-2018-01-25 21:55:04,421 INFO [main] application - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-01-25 21:55:04,421 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2018-01-25 21:55:04,457 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
-2018-01-25 21:55:05,228 INFO [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@15d301f2{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-2018-01-25 21:55:05,372 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainer - Jetty started on port(s) 8080 (http/1.1)
-2018-01-25 21:55:05,622 INFO [main] com.gakki.love.FirstFlight - Started FirstFlight in 99.691 seconds (JVM running for 165.873)
+2018-02-06 12:18:18,128 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2018-02-06 12:18:18,129 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2018-02-06 12:18:18,130 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/images/**'], []
+2018-02-06 12:18:18,131 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2018-02-06 12:18:18,131 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2018-02-06 12:18:18,132 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/error'], []
+2018-02-06 12:18:19,361 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bbb051a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c87dd24, org.springframework.security.web.header.HeaderWriterFilter@5ed9c556, org.springframework.security.web.authentication.logout.LogoutFilter@5a699940, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a1830b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18ffe722, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e54b214, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38b7bb67, org.springframework.security.web.session.SessionManagementFilter@ef4859, org.springframework.security.web.access.ExceptionTranslationFilter@8d1d34e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35cbc072]
+2018-02-06 12:18:21,296 INFO [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-02-06 12:18:21,760 INFO [main] application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 12:18:21,760 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 12:18:21,805 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-02-06 12:18:24,852 INFO [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@52e39914{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-02-06 12:18:25,178 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainer - Jetty started on port(s) 8080 (http/1.1)
+2018-02-06 12:18:26,354 INFO [main] com.gakki.love.FirstFlight - Started FirstFlight in 152.711 seconds (JVM running for 329.532)
+2018-02-06 19:39:27,082 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-06 19:39:28,054 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 10760 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
+2018-02-06 19:39:28,056 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
+2018-02-06 19:39:28,980 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@361c294e: startup date [Tue Feb 06 19:39:28 CST 2018]; root of context hierarchy
+2018-02-06 19:39:36,084 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 19:39:36,680 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 19:39:36,857 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
+2018-02-06 19:39:36,862 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
+2018-02-06 19:39:36,863 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
+2018-02-06 19:39:36,864 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
+2018-02-06 19:39:36,865 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
+2018-02-06 19:39:36,865 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
+2018-02-06 19:39:36,867 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
+2018-02-06 19:39:36,868 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
+2018-02-06 19:39:36,870 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
+2018-02-06 19:39:36,871 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
+2018-02-06 19:39:36,872 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
+2018-02-06 19:39:36,873 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
+2018-02-06 19:39:36,875 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
+2018-02-06 19:39:39,080 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3ed2539] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-06 19:39:40,467 INFO [main] org.eclipse.jetty.util.log - Logging initialized @52348ms
+2018-02-06 19:39:41,225 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
+2018-02-06 19:39:41,231 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+2018-02-06 19:39:41,924 INFO [main] application - Initializing Spring embedded WebApplicationContext
+2018-02-06 19:39:41,925 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 12945 ms
+2018-02-06 19:39:42,340 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 19:39:42,340 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 19:39:42,340 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 19:39:42,341 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 19:39:42,362 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-06 19:39:42,362 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 19:39:42,425 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@60251ddb{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.2298276402417645253.8080/,AVAILABLE}
+2018-02-06 19:39:42,426 INFO [main] org.eclipse.jetty.server.Server - Started @54307ms
+2018-02-06 19:39:44,118 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:39:44,170 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-06 19:39:45,132 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-06 19:39:45,134 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-06 19:39:45,136 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-06 19:39:45,471 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-06 19:39:48,034 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-06 19:39:50,573 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-02-06 19:39:56,353 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:39:57,723 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-06 19:39:58,303 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' flight.topic.publish.tags.size ' in string value "${ flight.topic.publish.tags.size }"
+2018-02-06 19:39:58,308 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:39:58,428 INFO [main] o.e.j.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@60251ddb{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.2298276402417645253.8080/,UNAVAILABLE}
+2018-02-06 19:39:58,440 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-06 19:57:46,869 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-06 19:57:47,613 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 5388 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
+2018-02-06 19:57:47,614 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
+2018-02-06 19:57:48,576 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66629f63: startup date [Tue Feb 06 19:57:48 CST 2018]; root of context hierarchy
+2018-02-06 19:57:53,606 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 19:57:53,985 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 19:57:54,094 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
+2018-02-06 19:57:54,097 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
+2018-02-06 19:57:54,098 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
+2018-02-06 19:57:54,098 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
+2018-02-06 19:57:54,099 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
+2018-02-06 19:57:54,099 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
+2018-02-06 19:57:54,100 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
+2018-02-06 19:57:54,100 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
+2018-02-06 19:57:54,101 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
+2018-02-06 19:57:54,102 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
+2018-02-06 19:57:54,102 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
+2018-02-06 19:57:54,103 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
+2018-02-06 19:57:54,104 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
+2018-02-06 19:57:55,398 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd5e7334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-06 19:57:56,386 INFO [main] org.eclipse.jetty.util.log - Logging initialized @43634ms
+2018-02-06 19:57:56,955 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
+2018-02-06 19:57:56,959 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+2018-02-06 19:57:57,344 INFO [main] application - Initializing Spring embedded WebApplicationContext
+2018-02-06 19:57:57,344 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8768 ms
+2018-02-06 19:57:57,720 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 19:57:57,720 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 19:57:57,720 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 19:57:57,721 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 19:57:57,748 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-06 19:57:57,748 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 19:57:57,795 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4930213b{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.4090117336799419506.8080/,AVAILABLE}
+2018-02-06 19:57:57,796 INFO [main] org.eclipse.jetty.server.Server - Started @45044ms
+2018-02-06 19:57:58,626 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:57:58,684 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-06 19:57:59,329 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-06 19:57:59,331 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-06 19:57:59,334 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-06 19:57:59,567 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-06 19:58:01,395 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-06 19:58:05,004 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-02-06 19:58:09,775 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:58:10,999 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-06 19:58:11,398 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' flight.topic.publish.tags.size ' in string value "${ flight.topic.publish.tags.size }"
+2018-02-06 19:58:11,402 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 19:58:11,520 INFO [main] o.e.j.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@4930213b{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.4090117336799419506.8080/,UNAVAILABLE}
+2018-02-06 19:58:11,537 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-06 20:01:25,909 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-06 20:01:29,965 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 2488 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
+2018-02-06 20:01:29,968 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
+2018-02-06 20:01:32,615 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@841e575: startup date [Tue Feb 06 20:01:32 CST 2018]; root of context hierarchy
+2018-02-06 20:01:42,117 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 20:01:42,521 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 20:01:42,633 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
+2018-02-06 20:01:42,637 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
+2018-02-06 20:01:42,639 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
+2018-02-06 20:01:42,639 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
+2018-02-06 20:01:42,640 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
+2018-02-06 20:01:42,641 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
+2018-02-06 20:01:42,642 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
+2018-02-06 20:01:42,643 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
+2018-02-06 20:01:42,644 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
+2018-02-06 20:01:42,645 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
+2018-02-06 20:01:42,645 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
+2018-02-06 20:01:42,646 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
+2018-02-06 20:01:42,647 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
+2018-02-06 20:01:44,724 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5053a486] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-06 20:01:46,984 INFO [main] org.eclipse.jetty.util.log - Logging initialized @67353ms
+2018-02-06 20:01:48,367 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
+2018-02-06 20:01:48,370 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+2018-02-06 20:01:49,651 INFO [main] application - Initializing Spring embedded WebApplicationContext
+2018-02-06 20:01:49,651 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 17036 ms
+2018-02-06 20:01:50,222 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 20:01:50,222 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 20:01:50,223 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 20:01:50,223 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 20:01:50,255 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-06 20:01:50,256 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 20:01:50,355 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@8ad6d29{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.2509453643932023875.8080/,AVAILABLE}
+2018-02-06 20:01:50,356 INFO [main] org.eclipse.jetty.server.Server - Started @70725ms
+2018-02-06 20:01:52,977 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-06 20:01:53,216 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-06 20:01:54,326 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-06 20:01:54,328 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-06 20:01:54,330 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-06 20:01:55,019 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-06 20:01:57,535 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-06 20:02:02,732 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-02-06 20:02:11,590 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 20:02:14,139 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-06 20:02:14,947 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' flight.topic.page.size ' in string value "${ flight.topic.page.size }"
+2018-02-06 20:02:14,952 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 20:02:15,156 INFO [main] o.e.j.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@8ad6d29{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.2509453643932023875.8080/,UNAVAILABLE}
+2018-02-06 20:02:15,176 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-02-06 20:03:35,659 INFO [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2018-02-06 20:03:36,306 INFO [main] com.gakki.love.FirstFlight - Starting FirstFlight on YYH with PID 13604 (D:\IdeaProjects\FirstFlight\target\classes started by YuAn in D:\IdeaProjects\FirstFlight)
+2018-02-06 20:03:36,308 INFO [main] com.gakki.love.FirstFlight - No active profile set, falling back to default profiles: default
+2018-02-06 20:03:36,989 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66629f63: startup date [Tue Feb 06 20:03:36 CST 2018]; root of context hierarchy
+2018-02-06 20:03:42,947 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 20:03:43,364 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-02-06 20:03:43,497 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PrivilegeRepository.
+2018-02-06 20:03:43,499 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FollowRepository.
+2018-02-06 20:03:43,500 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.AlbumsRepository.
+2018-02-06 20:03:43,501 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.UserRepository.
+2018-02-06 20:03:43,502 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.RolesRepository.
+2018-02-06 20:03:43,502 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FeedBackRepository.
+2018-02-06 20:03:43,503 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.NotifyRepository.
+2018-02-06 20:03:43,505 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.PraiseRepository.
+2018-02-06 20:03:43,507 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TagsRepository.
+2018-02-06 20:03:43,508 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.TopicRepository.
+2018-02-06 20:03:43,510 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.FavouriteRepository.
+2018-02-06 20:03:43,512 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.ReplyRepository.
+2018-02-06 20:03:43,515 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.gakki.love.repository.CommentRepository.
+2018-02-06 20:03:45,102 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd5e7334] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-02-06 20:03:46,398 INFO [main] org.eclipse.jetty.util.log - Logging initialized @30488ms
+2018-02-06 20:03:46,826 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8080
+2018-02-06 20:03:46,829 INFO [main] org.eclipse.jetty.server.Server - jetty-9.3.14.v20161028
+2018-02-06 20:03:47,232 INFO [main] application - Initializing Spring embedded WebApplicationContext
+2018-02-06 20:03:47,232 INFO [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10243 ms
+2018-02-06 20:03:47,610 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-06 20:03:47,611 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-06 20:03:47,611 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-06 20:03:47,611 INFO [main] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-06 20:03:47,645 INFO [main] o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-02-06 20:03:47,645 INFO [main] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-06 20:03:47,696 INFO [main] o.e.j.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@16f8df70{/,file:///C:/Users/YuAn/AppData/Local/Temp/jetty-docbase.2450338393251695082.8080/,AVAILABLE}
+2018-02-06 20:03:47,696 INFO [main] org.eclipse.jetty.server.Server - Started @31786ms
+2018-02-06 20:03:49,005 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-02-06 20:03:49,061 INFO [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-02-06 20:03:49,929 INFO [main] org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+2018-02-06 20:03:49,931 INFO [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-02-06 20:03:49,933 INFO [main] org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-02-06 20:03:50,232 INFO [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-06 20:03:51,521 INFO [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-06 20:03:54,596 INFO [main] o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-02-06 20:04:01,787 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-02-06 20:04:10,232 INFO [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-06 20:04:12,782 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66629f63: startup date [Tue Feb 06 20:03:36 CST 2018]; root of context hierarchy
+2018-02-06 20:04:13,632 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/home],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.CommonController.home(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.domain.Page<com.gakki.love.domain.Topic>,com.gakki.love.domain.User)
+2018-02-06 20:04:13,634 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sign_in],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.Login.userLogin(com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession,java.security.Principal)
+2018-02-06 20:04:13,647 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}/update],methods=[POST]}" onto public java.lang.String com.gakki.love.controller.user.UserController.update(com.gakki.love.domain.User,java.lang.Integer,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession,java.util.Map<java.lang.String, java.lang.Object>,java.lang.String)
+2018-02-06 20:04:13,651 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.input(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>)
+2018-02-06 20:04:13,651 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyPassword],methods=[PUT]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.modifyPassword(java.lang.String,java.lang.String,com.gakki.love.domain.User)
+2018-02-06 20:04:13,652 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.personalMiddle(java.lang.String,com.gakki.love.domain.User,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,653 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPassword],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forgetPassword(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,653 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.editHead(com.gakki.love.domain.User,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpSession) throws java.io.IOException
+2018-02-06 20:04:13,653 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail],methods=[PUT]}" onto public java.lang.String com.gakki.love.controller.user.UserController.modifyEmail(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,654 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardForgetPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardForgetPassword(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2018-02-06 20:04:13,655 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/modifyEmail/sendMail],methods=[POST]}" onto public com.gakki.love.domain.dto.CommonsResponse com.gakki.love.controller.user.UserController.sendEmailToModifyEmail(java.lang.String,com.gakki.love.domain.User,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,656 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forgetPass/sendMail],methods=[POST]}" onto public void com.gakki.love.controller.user.UserController.sendMailToResetPass(java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2018-02-06 20:04:13,656 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyPassword],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyPassword()
+2018-02-06 20:04:13,656 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/forwardModifyEmail],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.UserController.forwardModifyEmail(javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,658 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/personal/{id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.visitOtherPage(java.lang.Integer,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,659 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/topic/{topic_id}],methods=[GET]}" onto public java.lang.String com.gakki.love.controller.user.VisitController.forwardTopic(java.lang.Integer,java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpSession)
+2018-02-06 20:04:13,663 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-06 20:04:13,664 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-06 20:04:13,765 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 20:04:13,765 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 20:04:13,863 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-06 20:04:17,660 INFO [main] o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: e347a519-8139-480d-9bc4-a3e5cd348a29
+
+2018-02-06 20:04:17,978 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/css/**'], []
+2018-02-06 20:04:17,978 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/js/**'], []
+2018-02-06 20:04:17,978 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/images/**'], []
+2018-02-06 20:04:17,978 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2018-02-06 20:04:17,979 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2018-02-06 20:04:17,979 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/error'], []
+2018-02-06 20:04:18,418 INFO [main] o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7aa1e86b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3963d003, org.springframework.security.web.header.HeaderWriterFilter@3aef4650, org.springframework.security.web.authentication.logout.LogoutFilter@46916d68, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6bd4d24b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42927b0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75eed00f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72a80415, org.springframework.security.web.session.SessionManagementFilter@3a6732bc, org.springframework.security.web.access.ExceptionTranslationFilter@7a6cab6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d0c35a8]
+2018-02-06 20:04:18,780 INFO [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-02-06 20:04:18,898 INFO [main] application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-06 20:04:18,898 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-06 20:04:18,934 INFO [main] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-02-06 20:04:19,243 INFO [main] o.e.jetty.server.AbstractConnector - Started ServerConnector@29f94912{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-02-06 20:04:19,271 INFO [main] o.s.b.c.e.j.JettyEmbeddedServletContainer - Jetty started on port(s) 8080 (http/1.1)
+2018-02-06 20:04:19,373 INFO [main] com.gakki.love.FirstFlight - Started FirstFlight in 45.171 seconds (JVM running for 63.463)

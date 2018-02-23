@@ -5,7 +5,7 @@ import com.gakki.love.constant.PageConstant;
 import com.gakki.love.domain.Notify;
 import com.gakki.love.domain.Topic;
 import com.gakki.love.domain.User;
-import com.gakki.love.domain.dto.CommonsResponse;
+import com.gakki.love.domain.dto.CommonResponse;
 import com.gakki.love.exception.FlightException;
 import com.gakki.love.service.NotifyService;
 import com.gakki.love.service.TopicService;
@@ -13,17 +13,13 @@ import com.gakki.love.service.UserService;
 import com.gakki.love.utils.*;
 import com.gakki.love.validator.UserValidator;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.internal.SessionImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -34,7 +30,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.Executors;
 
 /**
  * Created by 林漠 on 2017/6/14.
@@ -146,21 +141,21 @@ public class UserController {
      */
 
     @PutMapping("/user/modifyPassword")
-    public CommonsResponse modifyPassword(
+    public CommonResponse modifyPassword(
             @RequestParam("oldPassword") String oldPassword,@RequestParam("newPassword") String newPassword,
             @SessionAttribute("user") User user){
         if (!EncryptUtils.matches(oldPassword,user.getPassword())){
-            return new CommonsResponse(true,"原始密码更改错误！！！");
+            return new CommonResponse(true,"原始密码更改错误！！！");
         }
         if (!EncryptUtils.matches(newPassword,user.getPassword())){
-            return new CommonsResponse(true,"密码未更改！！！");
+            return new CommonResponse(true,"密码未更改！！！");
         }
         user.setPassword(EncryptUtils.execEncrypt(newPassword));
         if (userService.newOrUpdate(user)) {
-            return new CommonsResponse(true, "密码更改成功！！！");
+            return new CommonResponse(true, "密码更改成功！！！");
         }
 
-        return new CommonsResponse(false,"系统异常，请稍后再试！！！");
+        return new CommonResponse(false,"系统异常，请稍后再试！！！");
     }
 
     /**
@@ -187,22 +182,22 @@ public class UserController {
      */
 
     @PostMapping("/user/modifyEmail/sendMail")
-    public CommonsResponse sendEmailToModifyEmail(@RequestParam("newEmail")String newEmail,
-        @SessionAttribute("user")User user,HttpSession session){
+    public CommonResponse sendEmailToModifyEmail(@RequestParam("newEmail")String newEmail,
+                                                 @SessionAttribute("user")User user, HttpSession session){
 
         if (!UserUtils.checkLogin()){
             throw new FlightException("您的登录已过期，请重新登录！！！");
         }
         log.debug("发送邮件，修改邮箱！");
         if (!StringUtils.hasText(newEmail)){
-            return new CommonsResponse(false,"请填写邮箱地址！！！");
+            return new CommonResponse(false,"请填写邮箱地址！！！");
         }
         if (!MailUtils.isEmail(newEmail)){
-            return new CommonsResponse(false,"您输入的不是邮箱哒 ^o^||");
+            return new CommonResponse(false,"您输入的不是邮箱哒 ^o^||");
         }
         //判断数据库中是否存在
         if (MailUtils.exist(newEmail,userService)){
-            return new CommonsResponse(false,"邮箱已存在！");
+            return new CommonResponse(false,"邮箱已存在！");
         }
         Calendar calendar  = Calendar.getInstance();
         // 时间是5分钟之后
@@ -218,7 +213,7 @@ public class UserController {
 
         String top = "来自第一次旅行项目组";
         MailUtils.sendMail(newEmail,top,content);
-        return new CommonsResponse(true,"嗖...............到家啦！");
+        return new CommonResponse(true,"嗖...............到家啦！");
 
     }
 
