@@ -2,19 +2,15 @@ package com.gakki.love.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.gakki.love.service.UploadService;
-import com.qiniu.util.Auth;
 import lombok.extern.slf4j.Slf4j;
-import okhttp3.OkHttpClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
-import static javax.crypto.Cipher.SECRET_KEY;
 
 /**
  * \* Created with IntelliJ IDEA.

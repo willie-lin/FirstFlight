@@ -1,14 +1,12 @@
 package com.gakki.love.controller.user;
 
 import com.alibaba.fastjson.JSONObject;
-import com.gakki.love.domain.Favourite;
 import com.gakki.love.domain.Topic;
 import com.gakki.love.domain.User;
 import com.gakki.love.exception.FlightException;
 import com.gakki.love.service.*;
 import com.gakki.love.utils.UserUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.internal.SessionImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -18,9 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import javax.annotation.Resource;
-import javax.print.attribute.standard.MediaSize;
 import javax.servlet.http.HttpSession;
-import java.security.cert.TrustAnchor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
