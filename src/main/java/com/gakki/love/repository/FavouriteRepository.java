@@ -33,7 +33,7 @@ public interface FavouriteRepository extends JpaRepository<Favourite,Integer> {
     /*
     获取所有,被浏览用户分享的并且当前用户收藏的,分享ID
      */
-    @Query(value = "select topic from favourite where user = :user_id and topic  in (select id from topic where  user=:topic_id )",nativeQuery = true)
+    @Query(value = "select topic from favourite where user = :user_id and topic in (select id from topic where user = :other_id)", nativeQuery = true)
     List<Integer> getTopicIdsByUserIdAndOtherId(@Param("user_id") Integer User_id,@Param("other_id") Integer other_id);
 
 
